@@ -27,6 +27,7 @@ body {
   line-height: 1.5;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 ::before,
 ::after {
@@ -56,15 +57,6 @@ ul {
 .section.active{
   z-index: 2;
   opacity: 1;
-  animation: slideSection 1s ease;
-}
-@keyframes slideSection{
-  0%{
-    transform: translateX(100%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
 }
 .hidden {
   display: none !important;
@@ -198,7 +190,7 @@ ul {
   border: 1px solid var(--bg-black-50);
   cursor: pointer;
   position: fixed;
-  left: 300px;
+  left: 100px;
   top: 20px;
   border-radius: 5px;
   background: var(--bg-black-100);
